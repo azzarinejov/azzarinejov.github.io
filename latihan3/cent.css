@@ -1,0 +1,13 @@
+@font-face {
+  font-family: century-gothic, sans-serif;
+  src: url(https://use.typekit.net/mdi0hgt.css);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: century-gothic, sans-serif;
+  src: url(https://use.typekit.net/mdi0hgt.css);
+  font-weight: 700;
+  font-style: bold;
+}
