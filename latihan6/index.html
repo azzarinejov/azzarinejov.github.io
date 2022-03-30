@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://use.typekit.net/xqi4xns.css">
+
+        <title>Resume</title>
+
+        <style>
+            * {
+              margin: 0;
+              padding: 0;
+            }
+        
+            .main {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 0 auto;
+            }
+
+        /*row*/
+            .row1 {
+                width: 800px;
+                height: 550px;
+                float: left;
+                /*border-bottom: 1px solid black;*/
+                margin-left: 20px;
+            }
+
+            .row2 {
+                width: 800px;
+                height: 50px;
+                float: left;
+                text-align: center;
+                background-color: #A569BD;
+            }
+
+        
+        /*tab*/
+            .tab-nav {
+                padding: 3px 25px;
+                margin: 6px;
+                border-right: 1px solid black;
+                float: left;
+               font-family: brandon-grotesque, sans-serif;
+               font-weight: 500;
+               font-size: 20px;
+               cursor: pointer;
+               display: inline-block;
+            }
+
+                .tab-nav :hover {
+                    color: white;
+                }
+
+                .tab-nav button.active {
+                    background-color: #8E44AD;
+                }
+
+            .tabcontent {
+                display: none;
+                padding: 100px 20px;
+                height: 100%;
+            }
+
+        /*text*/
+        /*CVheader*/
+        h1 {
+            font-family: brandon-grotesque, sans-serif;
+            font-weight: 500;
+            font-size: 50px;
+            color: #A569BD;
+        }
+
+        /*Title*/
+        h1a {
+            font-family: brandon-grotesque, sans-serif;
+            font-weight: 500;
+            font-size: 40px;
+            color: black;
+        }
+
+        /*subhead*/
+        h2 {
+            font-family: brandon-grotesque, sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        /*bodytext*/
+        h3 {
+            font-family: brandon-grotesque, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        </style>
+    </head>
+
+<script>
+    var Home = [
+        '<h1a> Azzarine Jovita </h1a>'+
+        '<h2> Graphic Designer </h2>'+
+        '<br></br>'+
+        '<h2>Personal Details</h2>'+
+        '<h3>Place, DOB : Jakarta, 17 June 2002</h3>'+
+        '<h3>Nationality : Indonesian</h3>'+
+        '<h3>Address : Discovery Fiore J/8 Bintaro Jaya</h3>'+
+        '<h3>Mobile : 0815 4254 0080</h3>'+
+        '<h3>Email : portfolio.azzarine@gmail.com</h3>'+
+        '<br></br>'+
+        '<h2>Contact Info</h2>'+
+        '<h3><li>Linked In profile:</li></h3>'+
+        '<h3>linkedin.com/in/azzarine-jovita-802580199</h3>'
+    ];
+
+    var About = [
+        '<br></br>'+
+        '<h1a>About Me</h1a>'+
+        '<h3>Hi, my name is Azzarine. I am a student in Design Communication Visual field. I am seeking for an internship in the field of graphic design communication and content creating where I can apply my knowledge and skills for continuous improvement.</h3>'+
+        '<br></br>'+
+        '<h1a>Want to know me more?</h1a>'+
+        '<h3>I also experienced in social media management where I create engagements on small businness in Instagram Accounts. Creating interactions to followers is such a challenging thing to do.</h3>'
+    ];
+
+    var Education = [
+        '<br></br>'+
+        '<h1a>Education</h1a>'+
+        '<h2>Formal Education</h2>'+
+        '<h3>2020 - Present : VCD, Universitas Pelita Harapan</h3>'+
+        '<h3>2017 - 2020 : UPH College, Tangerang</h3>'+
+        '<h3>2014 - 2017 : Saint Johns School, West Jakarta</h3>'+
+        '<h3>2008-2014 : Saint Johns School, West Jakarta</h3>'+
+        '<h3>2006 - 2008 : Menara Kasih, Tangerang</h3>'+
+        '<br></br>'+
+        '<h2>Non Formal Education</h2>'+
+        '<h3>2009 - 2014 : Bimbel, Tangerang</h3>'+
+        '<h3>2009 : Kumon, Tangerang</h3>'+
+        '<h3>2008 - 2017 : Mandarin Language, Tangerang</h3>'
+    ];
+
+    var Interest = [
+    '<br></br>'+
+    '<h1a>Interest</h1a>'+
+    '<h2>Here are my interest</h2>'+
+    '<h3><li>Adobe Photoshop</li></h3>'+
+    '<h3><li>Adobe Illustrator</li></h3>'+
+    '<h3><li>Adobe Premiere Pro</li></h3>'+
+    '<h3><li>Adobe InDesign</li></h3>'+
+    '<h3><li>Adobe Lightroom</li></h3>'+
+    '<h3><li>Procreate</li></h3>'+
+    '<h3><li>Content Creating</li></h3>'+
+    '<h3><li>Copywriting</li></h3>'
+    ]
+
+</script>
+
+<head>
+    <body>
+        <div class="main">
+            <div class="row1">
+                <div class="row1kiri">
+                    <h1>CURRICULUM VITAE</h1>
+                    <hr width="93%" align="center">
+                    <div id="isi" class="content"></div>
+                </div>
+            </div>
+
+            <div id="isi" class="content"></div>
+
+            <div class="row2">
+                <button class="tab-nav" onclick="openPage(Home)">Home</button>
+                <button class="tab-nav" onclick="openPage(About)">About</button>
+                <button class="tab-nav" onclick="openPage(Education)">Education</button>
+                <button class="tab-nav" onclick="openPage(Interest)">Interest</button>
+
+    </body>
+</head>
+</html>
+
+<script>
+    function openPage(About) {
+        document.querySelector('#isi').innerHTML = About;
+    }
+</script>
